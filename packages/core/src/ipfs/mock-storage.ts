@@ -11,7 +11,7 @@
 import { CID } from 'multiformats/cid';
 import { sha256 } from 'multiformats/hashes/sha2';
 import * as raw from 'multiformats/codecs/raw';
-import type { IIPFSStorage } from '../interfaces';
+import type { IIPFSStorage } from '../interfaces/index.js';
 
 /**
  * Mock IPFS Storage Configuration

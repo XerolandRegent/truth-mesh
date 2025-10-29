@@ -1,0 +1,23 @@
+"filename", "language", "JSON", "Markdown", "TypeScript", "JSON with Comments", "JavaScript", "comment", "blank", "total"
+"d:\Projects\truth-mesh\docs\INTEGRATION.md", "Markdown", 0, 20, 0, 0, 0, 0, 8, 28
+"d:\Projects\truth-mesh\package-lock.json", "JSON", 10103, 0, 0, 0, 0, 0, 1, 10104
+"d:\Projects\truth-mesh\packages\cli\README.md", "Markdown", 0, 257, 0, 0, 0, 0, 117, 374
+"d:\Projects\truth-mesh\packages\cli\bin\truth-mesh.js", "JavaScript", 0, 0, 0, 0, 2, 2, 2, 6
+"d:\Projects\truth-mesh\packages\cli\package-lock.json", "JSON", 2302, 0, 0, 0, 0, 0, 1, 2303
+"d:\Projects\truth-mesh\packages\cli\package.json", "JSON", 42, 0, 0, 0, 0, 0, 2, 44
+"d:\Projects\truth-mesh\packages\cli\src\cli.ts", "TypeScript", 0, 0, 189, 0, 0, 34, 31, 254
+"d:\Projects\truth-mesh\packages\cli\src\commands\info.ts", "TypeScript", 0, 0, 95, 0, 0, 17, 17, 129
+"d:\Projects\truth-mesh\packages\cli\src\commands\init.ts", "TypeScript", 0, 0, 89, 0, 0, 16, 18, 123
+"d:\Projects\truth-mesh\packages\cli\src\commands\keypair.ts", "TypeScript", 0, 0, 139, 0, 0, 16, 32, 187
+"d:\Projects\truth-mesh\packages\cli\src\commands\store.ts", "TypeScript", 0, 0, 157, 0, 0, 28, 29, 214
+"d:\Projects\truth-mesh\packages\cli\src\commands\verify.ts", "TypeScript", 0, 0, 151, 0, 0, 25, 27, 203
+"d:\Projects\truth-mesh\packages\cli\src\storage\persistent-mock.ts", "TypeScript", 0, 0, 49, 0, 0, 20, 12, 81
+"d:\Projects\truth-mesh\packages\cli\src\utils\config-manager.ts", "TypeScript", 0, 0, 142, 0, 0, 56, 22, 220
+"d:\Projects\truth-mesh\packages\cli\src\utils\formatter.ts", "TypeScript", 0, 0, 116, 0, 0, 37, 22, 175
+"d:\Projects\truth-mesh\packages\cli\src\utils\keypair-manager.ts", "TypeScript", 0, 0, 91, 0, 0, 45, 16, 152
+"d:\Projects\truth-mesh\packages\cli\tests\utils.test.ts", "TypeScript", 0, 0, 104, 0, 0, 19, 35, 158
+"d:\Projects\truth-mesh\packages\cli\tsconfig.json", "JSON with Comments", 0, 0, 0, 17, 0, 0, 0, 17
+"d:\Projects\truth-mesh\packages\cli\vitest.config.ts", "TypeScript", 0, 0, 17, 0, 0, 0, 2, 19
+"d:\Projects\truth-mesh\packages\core\src\index.ts", "TypeScript", 0, 0, 0, 0, 0, 0, -1, -1
+"d:\Projects\truth-mesh\packages\core\src\ipfs\helia-storage.ts", "TypeScript", 0, 0, 11, 0, 0, 0, 1, 12
+"Total", "-", 12447, 277, 1350, 17, 2, 315, 394, 14802

@@ -9,7 +9,7 @@
  */
 
 import type { CID } from 'multiformats/cid';
-import type { MerkleProof } from '../interfaces/merkle';
+import type { MerkleProof } from '../interfaces/merkle.js';
 
 /**
  * Storage result after fact is successfully stored

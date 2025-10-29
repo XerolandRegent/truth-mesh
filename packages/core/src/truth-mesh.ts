@@ -9,13 +9,13 @@
  */
 
 import type { CID } from 'multiformats/cid';
-import { SignatureService } from './crypto/signatures';
-import { MerkleTree } from './merkle/tree';
-import { HeliaStorage } from './ipfs/helia-storage';
-import { VerificationService } from './verification/verify';
-import { mergeConfig, type TruthMeshConfig } from './config';
-import { Errors } from './utils/errors';
-import type { IIPFSStorage, ICryptoService, IMerkleTree, KeyPair } from './interfaces';
+import { SignatureService } from './crypto/signatures.js';
+import { MerkleTree } from './merkle/tree.js';
+import { HeliaStorage } from './ipfs/helia-storage.js';
+import { VerificationService } from './verification/verify.js';
+import { mergeConfig, type TruthMeshConfig } from './config.js';
+import { Errors } from './utils/errors.js';
+import type { IIPFSStorage, ICryptoService, IMerkleTree, KeyPair } from './interfaces/index.js';
 import type {
   Fact,
   FactInput,
@@ -23,7 +23,7 @@ import type {
   VerificationRequest,
   VerificationResult,
   VerificationOptions
-} from './types';
+} from './types/index.js';
 
 /**
  * Truth Mesh Core

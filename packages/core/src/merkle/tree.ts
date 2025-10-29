@@ -9,9 +9,9 @@
  */
 
 import type { CID } from 'multiformats/cid';
-import type { IIPFSStorage } from '../interfaces/storage';
-import type { ICryptoService } from '../interfaces/crypto';
-import type { IMerkleTree, MerkleNode, MerkleProof } from '../interfaces/merkle';
+import type { IIPFSStorage } from '../interfaces/storage.js';
+import type { ICryptoService } from '../interfaces/crypto.js';
+import type { IMerkleTree, MerkleNode, MerkleProof } from '../interfaces/merkle.js';
 
 /**
  * IPFS-Native Merkle Tree

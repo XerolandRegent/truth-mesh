@@ -15,7 +15,7 @@ import { MemoryDatastore } from 'datastore-core';
 import type { CID } from 'multiformats/cid';
 import type { Helia } from 'helia';
 import type { UnixFS } from '@helia/unixfs';
-import type { IIPFSStorage } from '../interfaces';
+import type { IIPFSStorage } from '../interfaces/index.js';
 
 /**
  * Helia Storage Configuration
@@ -58,13 +58,25 @@ export class HeliaStorage implements IIPFSStorage {
       return; // Already initialized
     }
 
-    // Development/Test: In-memory storage
-    if (this.config.mode === 'development' || this.config.mode === 'test') {
-      this.helia = await createHelia({
-        blockstore: new MemoryBlockstore(),
-        datastore: new MemoryDatastore()
-      });
+// Development/Test: In-memory storage with minimal libp2p
+if (this.config.mode === 'development' || this.config.mode === 'test') {
+  const { tcp } = await import('@libp2p/tcp');
+  const { noise } = await import('@chainsafe/libp2p-noise');
+  const { yamux } = await import('@chainsafe/libp2p-yamux');
+  
+  this.helia = await createHelia({
+    blockstore: new MemoryBlockstore(),
+    datastore: new MemoryDatastore(),
+    libp2p: {
+      addresses: {
+        listen: ['/ip4/127.0.0.1/tcp/0'] // Localhost only
+      },
+      transports: [tcp()], // Only TCP, no WebRTC
+      connectionEncrypters: [noise()],
+      streamMuxers: [yamux()]
     }
+  });
+}
 
     // Production: Persistent file system storage
     if (this.config.mode === 'production') {

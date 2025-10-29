@@ -9,15 +9,15 @@
  */
 
 import type { CID } from 'multiformats/cid';
-import type { IIPFSStorage } from '../interfaces/storage';
-import type { ICryptoService } from '../interfaces/crypto';
-import type { IMerkleTree } from '../interfaces/merkle';
+import type { IIPFSStorage } from '../interfaces/storage.js';
+import type { ICryptoService } from '../interfaces/crypto.js';
+import type { IMerkleTree } from '../interfaces/merkle.js';
 import type {
   VerificationRequest,
   VerificationResult,
   VerificationCheck,
   VerificationOptions
-} from '../types';
+} from '../types/index.js';
 
 /**
  * Verification Service

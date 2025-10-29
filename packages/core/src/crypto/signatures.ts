@@ -10,7 +10,7 @@
 
 import { createHash, generateKeyPairSync, sign, verify } from 'node:crypto';
 import type { CID } from 'multiformats/cid';
-import type { ICryptoService, KeyPair } from '../interfaces';
+import type { ICryptoService, KeyPair } from '../interfaces/index.js';
 
 /**
  * Ed25519 Cryptographic Service
