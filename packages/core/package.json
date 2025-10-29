@@ -1,0 +1,64 @@
+{
+  "name": "@truth-mesh/core",
+  "version": "0.1.0",
+  "description": "Decentralized knowledge verification protocol using IPFS, Merkle proofs, and cryptographic signatures",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "ipfs",
+    "merkle-tree",
+    "verification",
+    "cryptography",
+    "decentralized",
+    "knowledge-graph",
+    "fact-checking"
+  ],
+  "author": "XerolandRegent",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XerolandRegent/truth-mesh.git",
+    "directory": "packages/core"
+  },
+  "dependencies": {
+    "helia": "^5.0.0",
+    "@helia/unixfs": "^4.0.0",
+    "blockstore-core": "^4.4.0",
+    "datastore-core": "^9.2.9",
+    "multiformats": "^13.0.0",
+    "merkletreejs": "^0.3.11"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.4",
+    "@vitest/ui": "^1.0.4",
+    "@vitest/coverage-v8": "^1.0.4",
+    "blockstore-fs": "^1.1.10",
+    "datastore-fs": "^9.1.8"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
